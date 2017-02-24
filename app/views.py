@@ -5,15 +5,15 @@ from .forms import LoginForm
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {'nickname': 'Miguel'}  # fake user
+    user = {'nickname': 'Matt'}  # fake user
     posts = [  # fake array of posts
         { 
             'author': {'nickname': 'John'}, 
-            'body': 'Beautiful day in Portland!' 
+            'body': 'Test Post 1' 
         },
         { 
             'author': {'nickname': 'Susan'}, 
-            'body': 'The Avengers movie was so cool!' 
+            'body': 'Test Post 2' 
         }
     ]
     return render_template("index.html",
